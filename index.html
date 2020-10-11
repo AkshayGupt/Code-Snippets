@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EMAIL TEMPLATE</title>
+    
+    <style>
+
+        body{
+            margin: 0;
+            padding:0;
+            background-color:#f6f9fc;
+        }
+
+        table{
+            border-spacing: 0;
+        }
+        td{
+            padding:0;
+        }
+        img{
+            border:0;
+        }
+        .wrapper{
+            width:100%;
+            table-layout:fixed;
+            background-color:#f6f9fc;
+            padding-bottom: 40px;
+        }
+        .webkit{
+            max-width: 600px;
+            background-color: #ffffff;
+        }
+        .outer{
+            Margin:0 auto;
+            width:100%;
+            max-width:600px;
+            border-spacing:0;
+            font-family: sans-serif;
+            color:#4a4a4a;
+        }
+        .three-columns{
+            text-align: center;
+            font-size: 0;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        .three-columns .column{
+            width:100%;
+            max-width: 500px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .padding{
+            padding: 15px;
+        }
+        .padding .content{
+            font-size: 15px;
+            line-height: 
+        }
+        a{
+            text-decoration: none;
+            color:#388CDA;
+            font-size:16px;
+        }
+        @media screen  and (max-width: 600px){
+           img.welcome{
+               width: 500px !important;
+               max-width: 500px !important;
+           }
+           .padding{
+               padding-left: 0;
+               padding-right: 0;
+
+           }
+        }
+        @media screen  and (max-width: 500px){
+            img.welcome{
+               width: 500px !important;
+               max-width: 500px !important;
+           }
+           img.main-img{
+               width:250px !important;
+               max-width: 250px !important;
+           }
+           .padding{
+               padding-left: 0;
+               padding-right: 0;
+
+           }
+        }
+    </style>
+    
+</head>
+<body>
+  
+
+
+    <center class="wrapper">
+        <div class="webkit">
+            <table class="outer" align="center">
+
+                <!-- Company Logo -->
+                <!-- <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;">
+                            <tr>
+                                <td style="background-color: #388cda;padding:10px;text-align: center;">
+                                    <a href=""><img height="80px" width="90px" src="https://dcassetcdn.com/design_img/1559024/551167/551167_7840631_1559024_911ff84c_image.png" alt="Logo" title="logo"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> -->
+
+                <!-- Welcome Banner -->
+                <tr>
+                    <td>
+                        <a href=""><img class="welcome" src="https://www.loveadmin.com/wp-content/uploads/2019/09/21131.jpg" width="600px" alt="banner">  </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;">
+                            <tr>
+                                <td class="three-columns">
+                                    <table class="column" >
+                                        <tr>
+                                            <td class="padding" >
+                                               <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#"><img class="main-img" style="max-width: 200px;" height="150px" width="200px"src="https://magcentre.com/wp-content/uploads/2017/06/how-to-create-a-website-feature-image-e1496943224192.jpg" alt=""></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;">
+                                                            <p style="font-size:17px;font-weight: bold;">Hi <span id="name"></span> !</p>
+                                                            <p>We’re so excited that you’ve decided to purchase <span id="product_name"></span>. It’s designed to help you <span id="benefits"></span>. You can expect to hear from us <span id="time"></span> times a month with special offers, product updates, and more. Contact us at <span id="phone"></span> if you have any questions.”</p>
+                                                            <a href="#">Learn More</a>
+                                                        </td>
+                                                      
+                                                    </tr>
+                                               </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;">
+                            <tr>
+                                <td style="background-color:#388CDA;padding: 15px;text-align: center;">
+                                
+                                    <p style="font-size: 18px;color:#ffffff;margin-bottom: 13px">
+                                        Connect with us
+                                    </p>
+                                    <a href="#"><img src="https://image.flaticon.com/icons/png/512/124/124010.png" width="30"></a>
+                                    <a href="#"><img src="https://image.flaticon.com/icons/png/512/124/124021.png" width="30"></a>
+                                    <!-- <a href="#"><img src="data:image/png;base64,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" width="30"></a>
+                                    <a href="#"><img src="https://image.flaticon.com/icons/png/512/174/174857.png" width="30"></a> -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: #efefef;">
+                        <table width="100%" style="border-spacing: 0;"> 
+                            <tr>
+                                <td style="padding:20px;text-align: center">
+                                        <!-- <a href=""><img height="80px" width="90px" src="https://dcassetcdn.com/design_img/1559024/551167/551167_7840631_1559024_911ff84c_image.png" alt="Logo" title="logo"></a> -->
+                                        <p style="font-size: 16px;margin-top: 18px;">
+                                            123 Street Road, City ,5555
+                                        </p>
+                                        <p><a href="mailto:email@example.com">email@gmail.com</a></p>
+                                        <p><a href="tel:1800881023">1800881023</a></p>
+                                    </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="20" style="background-color:#388CDA"></td>
+                </tr>
+
+            </table>
+        </div>
+    </center>
+    
+
+
+
+
+
+
+
+
+    <script>
+
+        // Object example:
+        const obj={
+            name:"Manish",
+            product_name:"Startup kit",
+            time:"7",
+            benefits:"Sponshership, Marketting, Discounts and a lot more",
+            phone:999330202
+        }
+
+        const{name,product_name,time,benefits,phone} = obj;
+        document.getElementById("name").innerHTML= name;
+        document.getElementById("product_name").innerHTML=product_name;
+        document.getElementById("time").innerHTML= time;
+        document.getElementById("benefits").innerHTML=benefits;
+        document.getElementById("phone").innerHTML=phone;
+
+
+
+        </script>
+</body>
+</html>
